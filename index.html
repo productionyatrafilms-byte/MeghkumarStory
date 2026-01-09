@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mati Gyan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:," />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <nav>
+          <h1>Mati Gyan</h1>
+          <div class="translate-button-container">
+            <div class="translate-button" id="englishButton">E</div>
+            <div class="translate-button" id="hindiButton">H</div>
+            <div class="translate-button" id="gujaratiButton">G</div>
+          </div>
+        </nav>
+
+        <div class="video-container">
+          <div class="yt-wrapper loading" id="ytWrapper">
+            <div class="yt-frame-container">
+              <div id="ytPlayer"></div>
+            </div>
+
+            <div class="controls-row">
+              <button class="control-btn" id="mainToggleBtn" title="Play/Pause">
+                <i class="bi bi-play-fill pause-btn"></i>
+              </button>
+
+              <div class="volume-container">
+                <i id="volIcon" class="bi bi-volume-up-fill"></i>
+
+                <input
+                  type="range"
+                  id="volumeSlider"
+                  min="0"
+                  max="100"
+                  value="100"
+                />
+              </div>
+
+              <div class="progress-wrapper" id="progressContainer">
+                <div class="progress-bar" id="progressBar"></div>
+              </div>
+
+              <span class="time-display" id="timeDisplay">0:00 / 0:00</span>
+              <!-- <div class="settings-container">
+                <div class="quality-menu" id="qualityMenu">
+                  <div
+                    class="quality-option"
+                    data-quality="small"
+                    onclick="changeQuality('small', this)"
+                  >
+                    Low (240p)
+                  </div>
+                  <div
+                    class="quality-option"
+                    data-quality="medium"
+                    onclick="changeQuality('medium', this)"
+                  >
+                    Medium (360p)
+                  </div>
+                  <div
+                    class="quality-option"
+                    data-quality="high"
+                    onclick="changeQuality('high', this)"
+                  >
+                    High (HD)
+                  </div>
+                </div>
+                <button class="" id="settingsBtn" title="Quality Settings">
+                  <i class="bi bi-gear"></i>
+                </button>
+              </div> -->
+              <button id="fullscreenBtn" title="Toggle Fullscreen">
+                <i id="fullscreenIcon" class="bi bi-fullscreen"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    <!-- <script src="../djp.js"></script> -->
+  </body>
+</html>
