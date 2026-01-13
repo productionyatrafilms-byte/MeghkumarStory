@@ -20,11 +20,12 @@ tag.src = "https://www.youtube.com/iframe_api";
 const firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+// https://youtu.be/dRU3jNCteAQ?si=5TH1Og2b8yWwU3QM
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("ytPlayer", {
     height: "100%",
     width: "100%",
-    videoId: "oqiJWYxqa3U",
+    videoId: "dRU3jNCteAQ",
     playerVars: {
       autoplay: 1,
       controls: 0,
@@ -183,9 +184,9 @@ function updateButtonStyles(selectedLang) {
 function updateText(language) {
   const h1 = document.querySelector("nav h1");
   const fallbacks = {
-    English: "mati gyan",
-    Hindi: "मति ज्ञान",
-    Gujrati: "મતિ જ્ઞાન",
+    English: "Meghkumar Story",
+    Hindi: "मेघकुमार कहानी",
+    Gujrati: "મેઘકુમાર વાર્તા",
   };
 
   fetch("new1/json/data.json")
