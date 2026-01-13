@@ -12,20 +12,18 @@ const volIcon = document.getElementById("volIcon");
 // const settingsBtn = document.getElementById("settingsBtn");
 // const qualityMenu = document.getElementById("qualityMenu");
 // const qualityOptions = document.querySelectorAll(".quality-option");
-// https://youtu.be/182JTFErO_o?si=XtH0-xXd03I-_EmS
-
+// https://youtu.be/dRU3jNCteAQ?si=AWZeTcMdL1rIyqtO
 // Load YouTube API
 const tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
 const firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-// https://youtu.be/dRU3jNCteAQ?si=5TH1Og2b8yWwU3QM
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("ytPlayer", {
     height: "100%",
     width: "100%",
-    videoId: "dRU3jNCteAQ",
+    videoId: "dRU3jNCteAQ`",
     playerVars: {
       autoplay: 1,
       controls: 0,
